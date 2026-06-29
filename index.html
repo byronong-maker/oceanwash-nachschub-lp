@@ -1,0 +1,880 @@
+
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>OceanWash Nachschub-Bundle, 10% Rabatt + GRATIS Spülmaschinenpods</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       OceanWash - Reorder Bundle LP (v2, built fresh)
+       Light & clean storefront language. Montserrat everywhere.
+       ============================================================ */
+
+    :root{
+      --aqua:#43bbed;
+      --blue:#1b7dce;
+      --navy:#0c0c41;
+      --charcoal:#1d1c1c;
+      --ink:#232323;
+      --gray:#828282;
+      --bg-soft:#f4faff;
+      --gold:#ffb813;
+      --white:#ffffff;
+      --radius:12px;
+      --btn-radius:9px;
+      --shadow:0 8px 28px rgba(12,12,65,.08);
+      --shadow-sm:0 4px 16px rgba(12,12,65,.06);
+      --maxw:1180px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{
+      font-family:'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+      color:var(--ink);
+      background:var(--white);
+      font-size:18px;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    img{max-width:100%;display:block;}
+    a{text-decoration:none;color:inherit;}
+
+    .ow-wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+    h1,h2,h3,h4{color:var(--navy);font-weight:800;line-height:1.18;}
+    h1{font-size:clamp(2rem,4.6vw,3.3rem);letter-spacing:-.5px;}
+    h2{font-size:clamp(1.65rem,3.4vw,2.6rem);letter-spacing:-.4px;}
+    h3{font-size:clamp(1.2rem,2vw,1.55rem);}
+    p{color:var(--ink);}
+    .muted{color:var(--gray);}
+
+    section{padding:72px 0;}
+    .soft{background:var(--bg-soft);}
+
+    /* ---------- Buttons ---------- */
+    .ow-btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      background:var(--blue);color:#fff;font-weight:800;
+      font-size:1.08rem;padding:18px 38px;border-radius:var(--btn-radius);
+      border:none;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+      box-shadow:0 8px 22px rgba(27,125,206,.32);text-align:center;
+    }
+    .ow-btn:hover{background:#1769ad;transform:translateY(-2px);box-shadow:0 12px 28px rgba(27,125,206,.4);}
+    .ow-btn--lg{font-size:1.25rem;padding:22px 48px;width:100%;max-width:480px;}
+    .ow-btn--sm{font-size:.92rem;padding:11px 22px;box-shadow:none;}
+    .ow-btn--ghost{background:#fff;color:var(--blue);border:2px solid var(--blue);box-shadow:none;}
+
+    /* ---------- Sticky offer bar ---------- */
+    .ow-sticky{
+      position:sticky;top:0;z-index:60;
+      background:linear-gradient(90deg,var(--blue),var(--aqua));
+      color:#fff;font-weight:700;
+    }
+    .ow-sticky .ow-wrap{display:flex;align-items:center;justify-content:center;gap:18px;
+      padding-top:11px;padding-bottom:11px;flex-wrap:wrap;text-align:center;}
+    .ow-sticky-txt{font-size:1rem;}
+    .ow-sticky-txt strong{font-weight:800;}
+    .ow-sticky .ow-btn--sm{background:#fff;color:var(--blue);font-weight:800;}
+    .ow-sticky .ow-btn--sm:hover{background:#eaf6ff;}
+
+    /* ---------- Header ---------- */
+    .ow-header{position:sticky;top:0;z-index:55;background:#fff;border-bottom:1px solid #eef3f8;}
+    .ow-header .ow-wrap{display:flex;align-items:center;justify-content:space-between;
+      padding-top:16px;padding-bottom:16px;}
+    .ow-logo{font-size:1.5rem;font-weight:900;color:var(--navy);letter-spacing:-.5px;}
+    .ow-logo span{color:var(--blue);}
+    .ow-logo img{height:38px;width:auto;}
+    .ow-header-actions{display:flex;align-items:center;gap:22px;}
+    .ow-icon{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:.95rem;color:var(--navy);}
+    .ow-icon svg{width:22px;height:22px;}
+
+    /* ---------- Hero ---------- */
+    .ow-hero{background:#fff;padding-top:64px;padding-bottom:80px;}
+    .ow-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
+    .ow-eyebrow{
+      display:inline-flex;align-items:center;gap:8px;
+      background:#eaf6ff;color:var(--blue);font-weight:800;font-size:.85rem;
+      letter-spacing:.5px;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:22px;
+    }
+    .ow-hero h1{margin-bottom:18px;}
+    .ow-hero-sub{font-size:1.2rem;color:var(--ink);margin-bottom:30px;max-width:560px;}
+    .ow-checks{list-style:none;display:grid;gap:16px;margin-bottom:34px;}
+    .ow-checks li{display:flex;align-items:flex-start;gap:14px;font-size:1.1rem;font-weight:600;color:var(--ink);}
+    .ow-check-ic{
+      flex:0 0 28px;width:28px;height:28px;border-radius:50%;
+      background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;
+      font-size:.95rem;font-weight:900;margin-top:2px;
+    }
+    .ow-hero-cta-row{display:flex;flex-direction:column;align-items:flex-start;gap:14px;}
+    .ow-trust-micro{display:flex;align-items:center;gap:10px;font-size:.98rem;color:var(--gray);font-weight:600;}
+    .ow-stars{color:var(--gold);letter-spacing:2px;font-size:1.05rem;}
+    .ow-hero-media{position:relative;}
+    .ow-hero-media img{width:100%;border-radius:18px;box-shadow:var(--shadow);}
+    .ow-hero-badge{
+      position:absolute;bottom:-18px;left:-18px;background:#fff;border-radius:14px;
+      box-shadow:var(--shadow);padding:14px 20px;display:flex;align-items:center;gap:12px;
+    }
+    .ow-hero-badge .big{font-size:1.6rem;font-weight:900;color:var(--blue);line-height:1;}
+    .ow-hero-badge .sm{font-size:.8rem;color:var(--gray);font-weight:700;}
+
+    /* ---------- Social proof banner ---------- */
+    .ow-social{background:linear-gradient(90deg,#eaf6ff,#f4faff);}
+    .ow-social .ow-wrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;}
+    .ow-social h2{margin-bottom:4px;}
+    .ow-social-stars{font-size:2rem;color:var(--gold);letter-spacing:4px;}
+    .ow-social-note{font-size:1.05rem;color:var(--ink);font-weight:600;}
+    .ow-social-note strong{color:var(--navy);}
+
+    /* ---------- Section intro ---------- */
+    .ow-sec-head{text-align:center;max-width:760px;margin:0 auto 48px;}
+    .ow-sec-head p{font-size:1.15rem;color:var(--ink);margin-top:14px;}
+
+    /* ---------- Full-width brand creative (graphics with baked-in text) ---------- */
+    .ow-creative{max-width:860px;margin:0 auto;}
+    .ow-creative img{width:100%;border-radius:18px;box-shadow:var(--shadow);}
+
+    /* ---------- Values grid (Why) ---------- */
+    .ow-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+    .ow-value-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden;}
+    .ow-value-card img{width:100%;height:170px;object-fit:cover;}
+    .ow-value-card .body{padding:20px 18px 24px;}
+    .ow-value-card h3{font-size:1.15rem;margin-bottom:8px;}
+    .ow-value-card p{font-size:.98rem;color:var(--gray);}
+
+    /* ---------- Problem / Solution ---------- */
+    .ow-ps-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch;}
+    .ow-ps-card{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);background:#fff;display:flex;flex-direction:column;}
+    .ow-ps-card img{width:100%;height:220px;object-fit:contain;background:#f4faff;padding:14px;border-radius:var(--radius) var(--radius) 0 0;}
+    .ow-ps-card .body{padding:34px 32px;flex:1;}
+    .ow-ps-card .tag{display:inline-block;font-weight:800;font-size:.82rem;letter-spacing:.5px;
+      text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:14px;}
+    .ow-ps-problem{border:1px solid #f1d7d7;}
+    .ow-ps-problem .tag{background:#fdecec;color:#c0392b;}
+    .ow-ps-solution{border:2px solid var(--aqua);}
+    .ow-ps-solution .tag{background:#eaf6ff;color:var(--blue);}
+    .ow-ps-list{list-style:none;display:grid;gap:12px;margin-top:8px;}
+    .ow-ps-list li{display:flex;gap:11px;font-size:1.02rem;align-items:flex-start;}
+    .ow-ps-list li .ic{flex:0 0 22px;font-weight:900;}
+    .ow-ps-problem .ic{color:#c0392b;}
+    .ow-ps-solution .ic{color:var(--blue);}
+
+    /* ---------- Skin-health 3-grid ---------- */
+    .ow-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+    .ow-feat-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);
+      padding:36px 28px;text-align:center;border:1px solid #eef3f8;}
+    .ow-feat-ic{width:72px;height:72px;border-radius:50%;background:#eaf6ff;color:var(--blue);
+      display:flex;align-items:center;justify-content:center;margin:0 auto 20px;}
+    .ow-feat-ic svg{width:36px;height:36px;}
+    .ow-feat-card h3{margin-bottom:10px;}
+    .ow-feat-card p{color:var(--gray);font-size:1rem;}
+
+    /* ---------- Comparison table ---------- */
+    .ow-compare{max-width:880px;margin:0 auto;background:#fff;border-radius:var(--radius);
+      box-shadow:var(--shadow);overflow:hidden;border:1px solid #eef3f8;}
+    .ow-compare table{width:100%;border-collapse:collapse;}
+    .ow-compare th,.ow-compare td{padding:18px 20px;text-align:left;font-size:1.02rem;}
+    .ow-compare thead th{background:var(--navy);color:#fff;font-weight:800;font-size:1.05rem;}
+    .ow-compare thead th:nth-child(2){background:var(--blue);text-align:center;}
+    .ow-compare thead th:nth-child(3){text-align:center;color:#cfd6e6;}
+    .ow-compare thead th:first-child{text-align:center;}
+    .ow-compare tbody tr:nth-child(even){background:var(--bg-soft);}
+    .ow-compare tbody td:nth-child(2),
+    .ow-compare tbody td:nth-child(3){text-align:center;font-weight:800;font-size:1.2rem;}
+    .ow-compare td .yes{color:#27ae60;}
+    .ow-compare td .no{color:#c0392b;}
+    .ow-compare tbody td:first-child{font-weight:600;color:var(--ink);}
+
+    /* ---------- Save money stat cards ---------- */
+    .ow-stat-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);
+      padding:40px 28px;text-align:center;border:1px solid #eef3f8;}
+    .ow-stat-num{font-size:2.8rem;font-weight:900;color:var(--blue);line-height:1;margin-bottom:10px;}
+    .ow-stat-card h3{font-size:1.15rem;margin-bottom:8px;}
+    .ow-stat-card p{color:var(--gray);font-size:.98rem;}
+
+    /* ---------- Reviews ---------- */
+    .ow-review-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);
+      padding:30px 28px;border:1px solid #eef3f8;display:flex;flex-direction:column;gap:14px;}
+    .ow-review-card .rstars{color:var(--gold);letter-spacing:2px;font-size:1.15rem;}
+    .ow-review-card .rtext{font-size:1.05rem;color:var(--ink);font-style:italic;flex:1;}
+    .ow-review-who{display:flex;align-items:center;gap:12px;}
+    .ow-review-who img{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:0 0 auto;}
+    .ow-review-who .nm{font-weight:800;color:var(--navy);font-size:.98rem;}
+    .ow-review-who .vf{font-size:.82rem;color:#27ae60;font-weight:700;}
+    .ow-ugc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;}
+    .ow-ugc-grid img{width:100%;height:200px;object-fit:cover;border-radius:var(--radius);}
+
+    /* ---------- Buy box / showcase ---------- */
+    .ow-buy{background:linear-gradient(180deg,#fff,#f4faff);}
+    .ow-buy-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+    .ow-buy-media img{border-radius:18px;box-shadow:var(--shadow);}
+    .ow-buy-free{display:inline-flex;align-items:center;gap:8px;background:#eafaf0;color:#1e8a4c;
+      font-weight:800;font-size:.95rem;padding:9px 16px;border-radius:999px;margin-bottom:18px;}
+    .ow-price-row{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:6px;}
+    .ow-price-old{font-size:1.5rem;color:var(--gray);text-decoration:line-through;font-weight:600;}
+    .ow-price-now{font-size:3rem;font-weight:900;color:var(--navy);line-height:1;}
+    .ow-price-code{display:inline-block;background:var(--blue);color:#fff;font-weight:800;
+      font-size:.95rem;padding:8px 16px;border-radius:8px;margin:14px 0 6px;}
+    .ow-price-final{font-size:1.15rem;font-weight:700;color:var(--ink);margin-bottom:22px;}
+    .ow-price-final strong{color:var(--blue);font-size:1.45rem;}
+    .ow-econ{list-style:none;display:grid;gap:10px;margin:0 0 26px;
+      background:#fff;border:1px solid #eef3f8;border-radius:var(--radius);padding:22px 24px;}
+    .ow-econ li{display:flex;justify-content:space-between;font-size:1.02rem;}
+    .ow-econ li span:last-child{font-weight:800;color:var(--navy);}
+    .ow-econ li.total{border-top:1px solid #eef3f8;padding-top:12px;font-size:1.12rem;}
+    .ow-econ li.total span:last-child{color:var(--blue);}
+    .ow-buy-trust{display:flex;flex-wrap:wrap;gap:18px;margin-top:22px;}
+    .ow-buy-trust div{display:flex;align-items:center;gap:8px;font-size:.92rem;font-weight:700;color:var(--ink);}
+    .ow-buy-trust svg{width:20px;height:20px;color:var(--blue);}
+
+    /* ---------- Offer reminder band ---------- */
+    .ow-reminder{background:linear-gradient(90deg,var(--blue),var(--aqua));color:#fff;text-align:center;}
+    .ow-reminder h2{color:#fff;margin-bottom:14px;}
+    .ow-reminder p{color:#eaf6ff;font-size:1.15rem;margin-bottom:28px;max-width:620px;margin-left:auto;margin-right:auto;}
+    .ow-reminder .ow-btn{background:#fff;color:var(--blue);}
+    .ow-reminder .ow-btn:hover{background:#eaf6ff;}
+
+    /* ---------- FAQ ---------- */
+    .ow-faq{max-width:820px;margin:0 auto;}
+    .ow-faq details{background:#fff;border:1px solid #eef3f8;border-radius:var(--radius);
+      margin-bottom:14px;box-shadow:var(--shadow-sm);overflow:hidden;}
+    .ow-faq summary{list-style:none;cursor:pointer;padding:22px 26px;font-weight:700;
+      font-size:1.1rem;color:var(--navy);display:flex;justify-content:space-between;align-items:center;gap:16px;}
+    .ow-faq summary::-webkit-details-marker{display:none;}
+    .ow-faq summary::after{content:"+";font-size:1.6rem;font-weight:400;color:var(--blue);transition:transform .2s;}
+    .ow-faq details[open] summary::after{content:"–";}
+    .ow-faq .faq-body{padding:0 26px 24px;color:var(--ink);font-size:1.02rem;}
+
+    /* ---------- Final CTA ---------- */
+    .ow-final{text-align:center;background:#fff;}
+    .ow-final h2{max-width:760px;margin:0 auto 16px;}
+    .ow-final-sub{font-size:1.2rem;color:var(--ink);max-width:620px;margin:0 auto 30px;}
+    .ow-stack{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:14px 28px;margin:0 auto 34px;max-width:760px;}
+    .ow-stack li{display:flex;align-items:center;gap:9px;font-weight:700;color:var(--ink);font-size:1.02rem;}
+    .ow-stack li::before{content:"✓";color:var(--blue);font-weight:900;font-size:1.1rem;}
+
+    /* ---------- Footer ---------- */
+    .ow-footer{background:var(--charcoal);color:#d7d7d7;padding:64px 0 28px;}
+    .ow-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:36px;margin-bottom:44px;}
+    .ow-footer h4{color:#fff;font-size:1.05rem;margin-bottom:18px;font-weight:800;}
+    .ow-footer .flogo{font-size:1.5rem;font-weight:900;color:#fff;margin-bottom:14px;}
+    .ow-footer .flogo span{color:var(--aqua);}
+    .ow-footer p{color:#b9b9b9;font-size:.95rem;}
+    .ow-footer ul{list-style:none;display:grid;gap:11px;}
+    .ow-footer ul a{color:#c9c9c9;font-size:.95rem;}
+    .ow-footer ul a:hover{color:#fff;}
+    .ow-pay{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;}
+    .ow-pay-chip{display:inline-flex;align-items:center;justify-content:center;background:#fff;
+      border:1px solid #dde4ee;border-radius:6px;height:34px;padding:0 9px;}
+    .ow-pay-chip img{height:auto;max-height:22px;width:auto;display:block;}
+    .ow-footer-bottom{border-top:1px solid #333;padding-top:24px;display:flex;
+      justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;}
+    .ow-footer-bottom .legal{font-size:.85rem;color:#9a9a9a;}
+    .ow-footer-meta{display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+    .ow-footer-meta select{background:#2c2b2b;color:#cfcfcf;border:1px solid #444;border-radius:6px;
+      padding:8px 12px;font-family:inherit;font-size:.85rem;}
+    .ow-social-links{display:flex;gap:14px;}
+    .ow-social-links a{width:36px;height:36px;border-radius:50%;background:#2c2b2b;
+      display:flex;align-items:center;justify-content:center;}
+    .ow-social-links svg{width:18px;height:18px;color:#cfcfcf;}
+
+    /* ---------- Loyalty benefits grid ---------- */
+    .ow-ben-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-sm);
+      padding:34px 26px;border:1px solid #eef3f8;text-align:left;}
+    .ow-ben-ic{width:60px;height:60px;border-radius:16px;background:#eaf6ff;display:flex;align-items:center;justify-content:center;
+      display:flex;align-items:center;justify-content:center;font-size:1.7rem;margin-bottom:18px;}
+    .ow-ben-card h3{font-size:1.12rem;margin-bottom:10px;}
+    .ow-ben-card p{color:var(--gray);font-size:.98rem;}
+
+    /* ---------- Inline payment icons (reusable) ---------- */
+    .ow-pay-inline{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:26px;}
+    .ow-pay-inline .ow-pay-chip{display:inline-flex;align-items:center;justify-content:center;background:#fff;
+      border:1px solid #dde4ee;border-radius:6px;height:34px;padding:0 9px;}
+    .ow-pay-inline .ow-pay-chip img{height:auto;max-height:22px;width:auto;display:block;}
+
+    /* ---------- Family two-column ---------- */
+    .ow-family-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+    .ow-family-media img{width:100%;border-radius:18px;box-shadow:var(--shadow);}
+    .ow-family-copy h2{margin-bottom:16px;}
+    .ow-family-copy .intro{font-size:1.12rem;color:var(--ink);margin-bottom:24px;}
+    .ow-family-list{list-style:none;display:grid;gap:16px;}
+    .ow-family-list li{display:flex;align-items:flex-start;gap:14px;font-size:1.08rem;font-weight:600;color:var(--ink);}
+    .ow-family-list .ow-check-ic{flex:0 0 28px;}
+
+    /* ---------- Comparison table (lively) ---------- */
+    .ow-compare thead th:nth-child(2) .cmp-head,
+    .ow-compare thead th:nth-child(3) .cmp-head{display:flex;flex-direction:column;align-items:center;gap:8px;}
+    .ow-compare thead th .cmp-thumb{width:48px;height:48px;border-radius:10px;object-fit:cover;
+      background:#fff;padding:4px;}
+    .ow-compare th,.ow-compare td{padding:20px 22px;}
+    .ow-compare tbody td:nth-child(2){background:rgba(39,174,96,.07);}
+    .ow-compare tbody tr:hover td{background:#f0f7ff;}
+    .ow-compare tbody tr:hover td:nth-child(2){background:rgba(39,174,96,.13);}
+    .ow-compare td .yes,.ow-compare td .no{display:inline-flex;align-items:center;justify-content:center;
+      width:32px;height:32px;border-radius:50%;font-size:1.05rem;font-weight:900;}
+    .ow-compare td .yes{background:#eafaf0;color:#1e8a4c;}
+    .ow-compare td .no{background:#fdecec;color:#c0392b;}
+
+    /* ---------- Save money / cost breakdown ---------- */
+    .ow-cost-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:32px;align-items:stretch;}
+    .ow-cost-card{border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:36px 30px;background:#fff;
+      border:1px solid #eef3f8;text-align:center;display:flex;flex-direction:column;justify-content:center;}
+    .ow-cost-card.win{border:2px solid var(--aqua);background:linear-gradient(180deg,#f4faff,#fff);}
+    .ow-cost-label{font-size:1rem;font-weight:800;color:var(--gray);text-transform:uppercase;
+      letter-spacing:.5px;margin-bottom:10px;}
+    .ow-cost-card.win .ow-cost-label{color:var(--blue);}
+    .ow-cost-num{font-size:3.2rem;font-weight:900;color:var(--navy);line-height:1;margin-bottom:8px;}
+    .ow-cost-card.win .ow-cost-num{color:var(--blue);}
+    .ow-cost-unit{font-size:1rem;color:var(--gray);font-weight:700;}
+    .ow-cost-note{font-size:.86rem;color:var(--gray);margin-top:12px;}
+    /* positive (OceanWash) / negative (conventional) cost treatment */
+    .ow-cost-card.win{position:relative;background:linear-gradient(180deg,#f1fbf4,#fff);border:2px solid #27ae60;}
+    .ow-cost-card.win .ow-cost-num{color:#1e8a4c;}
+    .ow-cost-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+      background:#27ae60;color:#fff;font-weight:800;font-size:.8rem;letter-spacing:.4px;
+      text-transform:uppercase;padding:6px 16px;border-radius:999px;white-space:nowrap;}
+    .ow-cost-card.lose{background:#fff4f4;border:1px solid #f1d7d7;border-left:5px solid #c0392b;}
+    .ow-cost-card.lose .ow-cost-label{color:#c0392b;}
+    .ow-cost-card.lose .ow-cost-num{color:#c0392b;}
+    .ow-cost-ind{font-size:1rem;font-weight:800;margin-bottom:6px;}
+    .ow-cost-card.win .ow-cost-ind{color:#1e8a4c;}
+    .ow-cost-card.lose .ow-cost-ind{color:#c0392b;}
+    .ow-cost-bottom{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+    .ow-cost-box{background:#fff;border:1px solid #eef3f8;border-radius:var(--radius);
+      box-shadow:var(--shadow-sm);padding:30px 28px;}
+    .ow-cost-box h3{font-size:1.15rem;margin-bottom:16px;}
+    .ow-cost-box .ow-econ{margin:0;box-shadow:none;}
+    .ow-cost-box p{color:var(--ink);font-size:1.02rem;}
+    .ow-cost-box .hint{display:flex;align-items:flex-start;gap:10px;font-weight:700;color:var(--navy);}
+    .ow-cost-box .hint::before{content:"✓";color:var(--blue);font-weight:900;font-size:1.2rem;line-height:1.3;}
+
+    /* ---------- UGC even grid ---------- */
+    .ow-ugc-mosaic{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:44px;}
+    .ow-ugc-mosaic img{width:100%;aspect-ratio:4 / 5;object-fit:cover;object-position:center top;
+      border-radius:14px;box-shadow:var(--shadow-sm);}
+
+    /* ---------- Responsive ---------- */
+    @media (max-width:980px){
+      .ow-family-grid,.ow-cost-grid,.ow-cost-bottom{grid-template-columns:1fr;gap:32px;}
+      .ow-ugc-mosaic{grid-template-columns:repeat(2,1fr);}
+      .ow-hero-grid,.ow-buy-grid{grid-template-columns:1fr;gap:40px;}
+      .ow-hero-media{order:-1;}
+      .ow-grid-4{grid-template-columns:repeat(2,1fr);}
+      .ow-ugc-grid{grid-template-columns:repeat(2,1fr);}
+      .ow-footer-grid{grid-template-columns:1fr 1fr;}
+    }
+    @media (max-width:680px){
+      body{font-size:17px;}
+      section{padding:54px 0;}
+      .ow-grid-3,.ow-ps-grid,.ow-grid-4{grid-template-columns:1fr;}
+      .ow-header-actions{gap:14px;}
+      .ow-icon span{display:none;}
+      .ow-sticky-txt{font-size:.88rem;}
+      .ow-ugc-grid{grid-template-columns:1fr 1fr;}
+      .ow-footer-grid{grid-template-columns:1fr;}
+      .ow-footer-bottom{flex-direction:column;align-items:flex-start;}
+      .ow-compare th,.ow-compare td{padding:13px 12px;font-size:.92rem;}
+      .ow-btn--lg{max-width:100%;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ 1. STICKY OFFER BAR ============ -->
+  <div class="ow-sticky">
+    <div class="ow-wrap">
+      <span class="ow-sticky-txt">
+        🌊 <strong>Dankeschön fürs Dranbleiben:</strong> 10% Rabatt + GRATIS Spülmaschinenpods
+      </span>
+      <a class="ow-btn ow-btn--sm" href="https://oceanwash.de/collections/frontpage/products/nachschub-bundle">Jetzt sichern</a>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="ow-header">
+    <div class="ow-wrap">
+      <a class="ow-logo" href="https://oceanwash.de">
+        <img src="https://oceanwash.de/cdn/shop/files/OceanWash_Logo_Header.svg?v=1737116552" alt="OceanWash" style="height:40px;width:auto;" onerror="this.outerHTML='Ocean<span>Wash</span>'">
+      </a>
+      <div class="ow-header-actions">
+        <a class="ow-icon" href="https://oceanwash.de/account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg>
+          <span>Konto</span>
+        </a>
+        <a class="ow-icon" href="https://oceanwash.de/cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6 5 3H2"/></svg>
+          <span>Warenkorb</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ 2. HERO ============ -->
+  <section class="ow-hero">
+    <div class="ow-wrap">
+      <div class="ow-hero-grid">
+        <div class="ow-hero-copy">
+          <span class="ow-eyebrow">Nur für Bestandskunden</span>
+          <h1>Schön, dass du wieder da bist. Zeit für Nachschub.</h1>
+          <p class="ow-hero-sub">
+            Du kennst den Unterschied bereits: weniger aggressive Chemie auf deiner Haut und eine zuverlässige Waschkraft. Fülle deinen Vorrat jetzt mit 10 % Extra-Rabatt auf und erhalte unsere Spülmaschinenpods GRATIS dazu.
+          </p>
+          <ul class="ow-checks">
+            <li><span class="ow-check-ic">✓</span> 10% Rabatt &amp; 1x Spülmaschinenpods GRATIS!</li>
+            <li><span class="ow-check-ic">✓</span> Hautfreundlich für die ganze Familie, auch für Kinder</li>
+            <li><span class="ow-check-ic">✓</span> In zwei Klicks nachbestellt, ohne schwere Flaschen</li>
+          </ul>
+          <div class="ow-hero-cta-row">
+            <a class="ow-btn ow-btn--lg" href="https://oceanwash.de/collections/frontpage/products/nachschub-bundle">
+              Nachschub-Bundle sichern →
+            </a>
+            <div class="ow-trust-micro">
+              <span class="ow-stars">★★★★★</span>
+              Über 100.000+ Familien · 4,7 von 5 Sternen
+            </div>
+            <div class="ow-pay-inline" style="justify-content:center;margin-top:10px;">
+              <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/visa.svg" alt="Visa" loading="lazy"></span>
+              <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/mastercard.svg" alt="Mastercard" loading="lazy"></span>
+              <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/paypal.svg" alt="PayPal" loading="lazy"></span>
+              <span class="ow-pay-chip"><img src="https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg" alt="Klarna" loading="lazy"></span>
+              <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
+            </div>
+          </div>
+        </div>
+        <div class="ow-hero-media">
+          <img src="https://cdn.shopify.com/s/files/1/0580/5211/6503/files/BUNDLE_Nachschub.webp?v=1765489305" alt="OceanWash Nachschub-Bundle mit Laundry Sheets und gratis Spülmaschinenpods">
+          <div class="ow-hero-badge">
+            <div class="big">10%</div>
+            <div class="sm">Rabatt<br>+ gratis Pods</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. SOCIAL PROOF BANNER ============ -->
+  <section class="ow-social" style="padding:48px 0;">
+    <div class="ow-wrap">
+      <div class="ow-social-stars">★★★★★</div>
+      <h2>Willkommen zurück! Du bist in bester Gesellschaft.</h2>
+      <p class="ow-social-note">Über 100.000 Familien vertrauen OceanWash bereits seit vielen Jahren und bewerten uns mit durchschnittlich 4,7 von 5 Sternen.</p>
+    </div>
+  </section>
+
+  <!-- ============ 4b. DIE 4 GRÖSSTEN VORTEILE ============ -->
+  <section class="soft">
+    <div class="ow-wrap">
+      <div class="ow-sec-head">
+        <h2>Die 4 größten Vorteile, wenn du bei OceanWash bleibst.</h2>
+        <p>Du hast dich bereits für weniger aggressive Chemie entschieden. Mit jeder Nachbestellung entscheidest du dich erneut für gesündere Haut und saubere Wäsche.</p>
+      </div>
+      <div class="ow-grid-4">
+        <div class="ow-ben-card">
+          <div class="ow-ben-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1b7dce" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg></div>
+          <h3>Gut für deine Haut. Bei jeder Wäsche.</h3>
+          <p>Deine Kleidung begleitet dich den ganzen Tag. Deshalb lohnt sich ein Waschmittel mit möglichst wenig aggressiver Chemie, heute genauso wie morgen.</p>
+        </div>
+        <div class="ow-ben-card">
+          <div class="ow-ben-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1b7dce" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
+          <h3>Weniger Plastik, ohne darüber nachzudenken</h3>
+          <p>Mit jeder Packung vermeidest du unnötige Plastikflaschen. Ganz automatisch, weil OceanWash bereits Teil deines Alltags ist.</p>
+        </div>
+        <div class="ow-ben-card">
+          <div class="ow-ben-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1b7dce" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.67 19a2 2 0 0 0 1.42-.59l6.15-6.17a6 6 0 0 0-8.49-8.49L5.59 9.91A2 2 0 0 0 5 11.33V18a1 1 0 0 0 1 1z"/><path d="M16 8 2 22"/><path d="M17.5 15H9"/></svg></div>
+          <h3>Endlich Schluss mit schweren Kanistern</h3>
+          <p>Ein Blatt statt schwerer Plastikflaschen. Kein Schleppen, kein Verschütten und immer exakt richtig dosiert.</p>
+        </div>
+        <div class="ow-ben-card">
+          <div class="ow-ben-ic"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#1b7dce" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg></div>
+          <h3>Eine Gewohnheit, die sich lohnt</h3>
+          <p>Du hast bereits auf OceanWash umgestellt. Jetzt musst du nur noch nachbestellen und weiterhin von den Vorteilen profitieren.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a class="ow-btn ow-btn--lg" href="https://oceanwash.de/collections/frontpage/products/nachschub-bundle">
+          Nachschub-Bundle sichern →
+        </a>
+        <div class="ow-pay-inline">
+          <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/visa.svg" alt="Visa" loading="lazy"></span>
+          <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/mastercard.svg" alt="Mastercard" loading="lazy"></span>
+          <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/paypal.svg" alt="PayPal" loading="lazy"></span>
+          <span class="ow-pay-chip"><img src="https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg" alt="Klarna" loading="lazy"></span>
+          <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. PROBLEM → SOLUTION ============ -->
+  <section class="soft">
+    <div class="ow-wrap">
+      <div class="ow-sec-head">
+        <h2>Weißt du noch, warum du gewechselt hast?</h2>
+        <p>Du hast den Unterschied längst gespürt. Hier nochmal zur Erinnerung, was du hinter dir gelassen hast und warum sich Dranbleiben lohnt.</p>
+      </div>
+      <div class="ow-ps-grid">
+        <div class="ow-ps-card ow-ps-problem">
+          <img src="Images/OW-PROBLEM-DETERGENT.jpg" alt="Herkömmliches Waschmittel in schweren Plastikflaschen">
+          <div class="body">
+            <span class="tag">Das alte Waschmittel</span>
+            <h3>Dahin willst du nicht zurück</h3>
+            <ul class="ow-ps-list">
+              <li><span class="ic">✕</span> Zurück zu vielen unnötigen Zusatzstoffen &amp; Duftchemie</li>
+              <li><span class="ic">✕</span> Wieder Reste in der Wäsche, direkt auf der Haut</li>
+              <li><span class="ic">✕</span> Wieder schwere Plastikflaschen, leicht überdosiert</li>
+              <li><span class="ic">✕</span> Wieder viel Verpackungsmüll bei jeder Nachbestellung</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ow-ps-card ow-ps-solution">
+          <img src="https://cdn.shopify.com/s/files/1/0580/5211/6503/files/BUNDLE_Nachschub.webp?v=1765489305" alt="OceanWash Laundry Sheets, kompakt und platzsparend">
+          <div class="body">
+            <span class="tag">OceanWash Waschmittelblätter</span>
+            <h3>Deine bessere Wahl, bleib dabei</h3>
+            <ul class="ow-ps-list">
+              <li><span class="ic">✓</span> Weiterhin wenige, durchdachte Inhaltsstoffe</li>
+              <li><span class="ic">✓</span> Weiterhin saubere Wäsche ohne aggressive Chemie</li>
+              <li><span class="ic">✓</span> Weiterhin exakt dosiert, ein Sheet pro Wäsche</li>
+              <li><span class="ic">✓</span> Weiterhin kompakt, platzsparend, deutlich weniger Plastik</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. BESSER FÜR DEINE FAMILIE (two-column) ============ -->
+  <section>
+    <div class="ow-wrap">
+      <div class="ow-family-grid">
+        <div class="ow-family-media">
+          <img src="Images/OW-FAMILY.jpg" alt="Familie mit sauberer, hautfreundlicher Wäsche">
+        </div>
+        <div class="ow-family-copy">
+          <h2>Besser für deine Familie</h2>
+          <p class="intro">Saubere Wäsche, die zu deiner Familie passt. Ohne aggressive Chemie, dafür mit allem, was wirklich zählt.</p>
+          <ul class="ow-family-list">
+            <li><span class="ow-check-ic">✓</span> Ohne Plastik &amp; Mikroplastik</li>
+            <li><span class="ow-check-ic">✓</span> Ohne Toxine &amp; Phosphate</li>
+            <li><span class="ow-check-ic">✓</span> Für alle Textilien geeignet</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. COMPARISON TABLE ============ -->
+  <section>
+    <div class="ow-wrap">
+      <div class="ow-sec-head">
+        <h2>Warum Dranbleiben sich lohnt</h2>
+        <p>Bei OceanWash bleiben (weiter so) oder zurück zum herkömmlichen Waschmittel, auf einen Blick.</p>
+      </div>
+      <div class="ow-compare">
+        <table>
+          <thead>
+            <tr>
+              <th>Worauf es ankommt</th>
+              <th>
+                <span class="cmp-head">
+                  <img class="cmp-thumb" src="https://cdn.shopify.com/s/files/1/0580/5211/6503/files/BUNDLE_Nachschub.webp" alt="OceanWash Nachschub-Bundle">
+                  OceanWash (weiter so)
+                </span>
+              </th>
+              <th>
+                <span class="cmp-head">
+                  <img class="cmp-thumb" src="Images/OW-PROBLEM-DETERGENT.jpg" alt="Herkömmliches Waschmittel">
+                  Zurück zum herkömmlichen Waschmittel
+                </span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Weniger Plastik</td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td></tr>
+            <tr><td>Wenige Inhaltsstoffe</td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td></tr>
+            <tr><td>Platzsparend im Schrank</td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td></tr>
+            <tr><td>Einfache, exakte Dosierung</td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td></tr>
+            <tr><td>Keine schweren Flaschen</td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td></tr>
+            <tr><td>Keine Überdosierung</td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td></tr>
+            <tr><td>Weniger Verpackungsmüll</td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td></tr>
+            <tr><td>Keine unnötigen Zusatzstoffe</td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <p style="font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:18px;">Bereit, bei der besseren Wahl zu bleiben?</p>
+        <a class="ow-btn ow-btn--lg" href="https://oceanwash.de/collections/frontpage/products/nachschub-bundle">
+          Nachschub-Bundle sichern →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. SAVE MONEY / COST BREAKDOWN ============ -->
+  <section class="soft">
+    <div class="ow-wrap">
+      <div class="ow-sec-head">
+        <h2>So viel sparst du weiterhin, Wäsche für Wäsche</h2>
+        <p>Deine Ersparnis hört nicht auf. Solange du bei den Sheets bleibst, bleibt auch dein Budget geschont. Hier die echten Zahlen.</p>
+      </div>
+
+      <div class="ow-cost-grid">
+        <div class="ow-cost-card win">
+          <span class="ow-cost-badge">Beste Wahl</span>
+          <div class="ow-cost-ind">✓ Günstiger</div>
+          <div class="ow-cost-label">OceanWash</div>
+          <div class="ow-cost-num">ca. 0,19 €</div>
+          <div class="ow-cost-unit">pro Wäsche</div>
+          <p class="ow-cost-note">3 Packs = 192 Wäschen für ca. 35,96 € mit Code.</p>
+        </div>
+        <div class="ow-cost-card lose">
+          <div class="ow-cost-ind">✕ Teurer</div>
+          <div class="ow-cost-label">Herkömmliches Waschmittel</div>
+          <div class="ow-cost-num">ca. 0,30 €</div>
+          <div class="ow-cost-unit">pro Wäsche (Schätzung)</div>
+          <p class="ow-cost-note">Durch Überdosierung oft noch teurer. (Schätzung / ungefährer Richtwert)</p>
+        </div>
+      </div>
+
+      <div class="ow-cost-bottom">
+        <div class="ow-cost-box">
+          <h3>Deine Bundle-Ersparnis</h3>
+          <ul class="ow-econ">
+            <li><span>3 Packs einzeln</span><span>58,95 €</span></li>
+            <li><span>Bundle-Preis</span><span>39,95 €</span></li>
+            <li><span>−10% Nachbestell-Code</span><span>ca. 35,96 €</span></li>
+            <li><span>Spülmaschinenpods</span><span>GRATIS</span></li>
+            <li class="total"><span>Du sparst</span><span>ca. 23,00 €</span></li>
+          </ul>
+        </div>
+        <div class="ow-cost-box">
+          <h3>Warum es sich wirklich lohnt</h3>
+          <p class="hint">192 Wäschen im Bundle, ein Sheet pro Ladung, ganz ohne Raten.</p>
+          <p class="hint" style="margin-top:14px;">Keine Überdosierung heißt: kein verschwendetes Produkt und kein verschwendetes Geld.</p>
+          <p class="hint" style="margin-top:14px;">Die gratis Spülmaschinenpods bekommst du obendrauf, ganz ohne Aufpreis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. REVIEWS & UGC ============ -->
+  <section>
+    <div class="ow-wrap">
+      <div class="ow-sec-head">
+        <h2>Bestandskunden, die immer wieder nachbestellen</h2>
+        <p>Echte Bewertungen von Familien, die längst dabeigeblieben sind und es nicht bereuen.</p>
+      </div>
+      <div class="ow-grid-3">
+        <div class="ow-review-card">
+          <div class="rstars">★★★★★</div>
+          <p class="rtext">„Seit wir umgestellt haben, kratzt nichts mehr auf der Haut meiner Kinder. Ich bestelle immer wieder nach, jetzt mit Rabatt sogar noch lieber."</p>
+          <div class="ow-review-who">
+            <img src="Images/OW-REVIEW-1.jpg" alt="Sandra K.">
+            <div><div class="nm">Sandra K.</div><div class="vf">✓ Verifizierter Kauf</div></div>
+          </div>
+        </div>
+        <div class="ow-review-card">
+          <div class="rstars">★★★★★</div>
+          <p class="rtext">„Endlich keine schweren Flaschen mehr schleppen. Ein Sheet rein, fertig. So einfach sollte Wäsche immer sein."</p>
+          <div class="ow-review-who">
+            <img src="Images/OW-REVIEW-2.jpg" alt="Miriam T.">
+            <div><div class="nm">Miriam T.</div><div class="vf">✓ Verifizierter Kauf</div></div>
+          </div>
+        </div>
+        <div class="ow-review-card">
+          <div class="rstars">★★★★★</div>
+          <p class="rtext">„Saubere Wäsche, angenehm dezenter Duft und weniger Plastik im Haushalt. Für unsere Familie genau richtig."</p>
+          <div class="ow-review-who">
+            <img src="Images/OW-REVIEW-3.jpg" alt="Petra &amp; Familie">
+            <div><div class="nm">Petra &amp; Familie</div><div class="vf">✓ Verifizierter Kauf</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="ow-sec-head" style="margin-top:64px;margin-bottom:0;">
+        <h2>Familien, die dabeigeblieben sind</h2>
+        <p>Das zeigen unsere treuen Kunden aus ihrem Alltag.</p>
+      </div>
+      <div class="ow-ugc-mosaic">
+        <img src="Images/OW-UGC-1.jpg" alt="Kundenfoto saubere Familienwäsche">
+        <img src="Images/OW-UGC-2.jpg" alt="Kundenfoto OceanWash Laundry Sheets">
+        <img src="Images/OW-UGC-3.jpg" alt="Kundenfoto hautfreundliche Wäsche">
+        <img src="Images/OW-UGC-4.jpg" alt="Kundenfoto OceanWash im Alltag">
+        <img src="Images/OW-UGC-5.jpg" alt="Kundenfoto Nachschub-Bundle">
+        <img src="Images/OW-UGC-6.jpg" alt="Kundenfoto frische Wäsche">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10. REORDER BUNDLE SHOWCASE / BUY BOX ============ -->
+  <section class="ow-buy" id="bundle">
+    <div class="ow-wrap">
+      <div class="ow-buy-grid">
+        <div class="ow-buy-media">
+          <img src="https://cdn.shopify.com/s/files/1/0580/5211/6503/files/KopievonErstelledeinpersoenlichesBundlemitzusaetzlichemRabatt.jpg?v=1765489307" alt="OceanWash Nachschub-Bundle: 3 Packs Laundry Sheets plus gratis Spülmaschinenpods">
+        </div>
+        <div class="ow-buy-copy">
+          <span class="ow-buy-free">🎁 + GRATIS Spülmaschinenpods</span>
+          <h2 style="margin-bottom:14px;">Das Nachschub-Bundle</h2>
+          <p style="font-weight:800;color:var(--blue);margin-bottom:10px;">Als Dankeschön fürs Dranbleiben</p>
+          <p style="margin-bottom:20px;color:var(--ink);">3 Packs OceanWash Laundry Sheets, dein Vorrat für viele Wochen saubere, hautfreundliche Wäsche.</p>
+
+          <div class="ow-price-row">
+            <span class="ow-price-old">58,95 €</span>
+            <span class="ow-price-now">39,95 €</span>
+          </div>
+          <span class="ow-price-code">−10% mit deinem Nachbestell-Code</span>
+          <p class="ow-price-final">Dein Endpreis: <strong>ca. 35,96 €</strong> <span class="muted">(10% bereits abgezogen)</span></p>
+
+          <ul class="ow-econ">
+            <li><span>3 Packs einzeln</span><span>58,95 €</span></li>
+            <li><span>Bundle-Preis</span><span>39,95 €</span></li>
+            <li><span>−10% Nachbestell-Code</span><span>−4,00 €</span></li>
+            <li><span>Spülmaschinenpods</span><span>GRATIS</span></li>
+            <li class="total"><span>Du zahlst</span><span>ca. 35,96 €</span></li>
+          </ul>
+
+          <a class="ow-btn ow-btn--lg" href="https://oceanwash.de/collections/frontpage/products/nachschub-bundle">
+            Jetzt nachbestellen &amp; sparen →
+          </a>
+
+          <div class="ow-buy-trust">
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 4v5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V7z"/></svg> Sichere Zahlung</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="15" height="12" rx="2"/><path d="M17 10h3l2 3v3h-5"/></svg> Schneller Versand</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 5v4h4"/></svg> Zufriedenheitsgarantie</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ============ 11. OFFER REMINDER BAND ============ -->
+  <section class="ow-reminder">
+    <div class="ow-wrap">
+      <h2>Als Dankeschön fürs Dranbleiben: 10% Rabatt + GRATIS Spülmaschinenpods</h2>
+      <p>Du bleibst uns treu, wir bedanken uns mit deinem Nachbestell-Vorteil. Sichere dir dein Bundle, solange das Angebot läuft.</p>
+      <a class="ow-btn" href="https://oceanwash.de/collections/frontpage/products/nachschub-bundle">Angebot jetzt sichern →</a>
+    </div>
+  </section>
+
+  <!-- ============ 12. FAQ ============ -->
+  <section>
+    <div class="ow-wrap">
+      <div class="ow-sec-head">
+        <h2>Häufige Fragen</h2>
+        <p>Alles, was du zur Nachbestellung wissen musst.</p>
+      </div>
+      <div class="ow-faq">
+        <details open>
+          <summary>Was ist im Nachschub-Bundle enthalten?</summary>
+          <div class="faq-body">Das Bundle enthält 3 Packs OceanWash Laundry Sheets, dein Vorrat für viele Wochen Wäsche. Zusätzlich bekommst du jetzt 1 Pack Spülmaschinenpods GRATIS dazu.</div>
+        </details>
+        <details>
+          <summary>Wie bekomme ich die 10% Rabatt und die gratis Pods?</summary>
+          <div class="faq-body">Die gratis Spülmaschinenpods sind bereits im Bundle enthalten. Die 10% ziehst du mit deinem Nachbestell-Code im Warenkorb ab. Dein Endpreis liegt dann bei ca. 35,96 € statt regulär 58,95 €.</div>
+        </details>
+        <details>
+          <summary>Sind die Laundry Sheets wirklich hautfreundlich?</summary>
+          <div class="faq-body">Ja. OceanWash setzt auf wenige, durchdachte Inhaltsstoffe und verzichtet auf unnötige Zusätze. So bekommst du saubere Wäsche ohne aggressive Chemie, sanft zur Haut der ganzen Familie, auch zu der von Kindern.</div>
+        </details>
+        <details>
+          <summary>Wie lange reicht das Bundle?</summary>
+          <div class="faq-body">Mit einem Sheet pro Ladung kommst du mit dem Bundle viele Wochen aus. Da du genau dosierst, gibt es keine Überdosierung und nichts wird verschwendet.</div>
+        </details>
+        <details>
+          <summary>Wie schnell ist der Versand?</summary>
+          <div class="faq-body">Deine Bestellung wird schnell bearbeitet und verschickt, damit dein Nachschub rechtzeitig bei dir ankommt. Die Sheets sind kompakt und leicht, kein Schleppen schwerer Flaschen.</div>
+        </details>
+        <details>
+          <summary>Kann ich umtauschen oder zurückgeben?</summary>
+          <div class="faq-body">Ja. Wir möchten, dass du rundum zufrieden bist. Solltest du nicht überzeugt sein, melde dich einfach bei unserem Kundenservice.</div>
+        </details>
+        <details>
+          <summary>Lohnt sich das Bundle gegenüber Einzelkäufen?</summary>
+          <div class="faq-body">Deutlich. Einzeln würden die 3 Packs 58,95 € kosten. Als Bundle zahlst du 39,95 €, mit dem 10%-Code nur ca. 35,96 €, und die Spülmaschinenpods gibt es gratis dazu.</div>
+        </details>
+        <details>
+          <summary>Gibt es auch ein Abo?</summary>
+          <div class="faq-body">Wenn du regelmäßig nachbestellst, kann sich ein Abonnement lohnen. Du bekommst deinen Nachschub automatisch und musst nie wieder daran denken. Schau dazu gern in unsere Abo-Optionen im Shop.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 13. FINAL CTA ============ -->
+  <section class="ow-final soft">
+    <div class="ow-wrap">
+      <h2>Du hast die richtige Wahl getroffen. Mach einfach weiter.</h2>
+      <p class="ow-final-sub">Saubere Wäsche, hautfreundlich für die ganze Familie, einfach nachbestellt, jetzt mit 10% Rabatt und gratis Spülmaschinenpods.</p>
+      <ul class="ow-stack">
+        <li>3 Packs Laundry Sheets</li>
+        <li>10% Rabatt mit Code</li>
+        <li>GRATIS Spülmaschinenpods</li>
+        <li>Hautfreundlich für die ganze Familie</li>
+        <li>Zufriedenheitsgarantie</li>
+      </ul>
+      <a class="ow-btn ow-btn--lg" href="https://oceanwash.de/collections/frontpage/products/nachschub-bundle">
+        Nachschub-Bundle jetzt sichern →
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ 14. FOOTER ============ -->
+  <footer class="ow-footer">
+    <div class="ow-wrap">
+      <div class="ow-footer-grid">
+        <div>
+          <div class="flogo"><img src="https://oceanwash.de/cdn/shop/files/OceanWash_Logo_Header.svg?v=1737116552" alt="OceanWash" style="height:34px;width:auto;" onerror="this.outerHTML='Ocean<span>Wash</span>'"></div>
+          <p>Sauberer Haushalt, hautfreundlich für die ganze Familie. Moderne Laundry Sheets, Spülmaschinenpods und mehr.</p>
+          <div class="ow-pay">
+            <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/visa.svg" alt="Visa" loading="lazy"></span>
+            <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/mastercard.svg" alt="Mastercard" loading="lazy"></span>
+            <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/paypal.svg" alt="PayPal" loading="lazy"></span>
+            <span class="ow-pay-chip"><img src="https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg" alt="Klarna" loading="lazy"></span>
+            <span class="ow-pay-chip"><img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
+          </div>
+        </div>
+        <div>
+          <h4>Service</h4>
+          <ul>
+            <li><a href="https://oceanwash.de/pages/contact">Kontakt</a></li>
+            <li><a href="https://oceanwash.de/policies/shipping-policy">Versand &amp; Lieferung</a></li>
+            <li><a href="https://oceanwash.de/policies/refund-policy">Rückgabe</a></li>
+            <li><a href="https://oceanwash.de/pages/datenblatt">Inhaltsstoffe</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Rechtliches</h4>
+          <ul>
+            <li><a href="https://oceanwash.de/policies/legal-notice">Impressum</a></li>
+            <li><a href="https://oceanwash.de/policies/privacy-policy">Datenschutz</a></li>
+            <li><a href="https://oceanwash.de/policies/terms-of-service">AGB</a></li>
+            <li><a href="https://oceanwash.de/pages/widerruf">Widerruf</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ow-footer-bottom">
+        <div class="legal">© 2026 OceanWash. Alle Rechte vorbehalten.</div>
+        <div class="ow-footer-meta">
+          <select aria-label="Sprache"><option>Deutsch</option><option>English</option></select>
+          <select aria-label="Währung"><option>EUR €</option><option>CHF</option></select>
+          <div class="ow-social-links">
+            <a href="https://oceanwash.de" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="https://oceanwash.de" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 8h2V5h-2a3 3 0 0 0-3 3v2H9v3h2v6h3v-6h2l1-3h-3V8z"/></svg></a>
+            <a href="https://oceanwash.de" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4v9.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 6a4 4 0 0 0 4 4"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
