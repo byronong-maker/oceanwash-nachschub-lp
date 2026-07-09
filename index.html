@@ -383,6 +383,20 @@
       .ow-compare th,.ow-compare td{padding:13px 12px;font-size:.92rem;}
       .ow-btn--lg{max-width:100%;}
     }
+    .ow-dur-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:26px;}
+    .ow-dur-card{background:#fff;border:1px solid #e6eef7;border-radius:18px;padding:34px 28px;text-align:center;box-shadow:0 10px 34px rgba(12,12,65,.06);}
+    .ow-dur-icon{width:58px;height:58px;margin:0 auto 16px;color:var(--blue);}
+    .ow-dur-icon svg{width:100%;height:100%;}
+    .ow-dur-qty{font-size:36px;font-weight:900;color:var(--blue);line-height:1;}
+    .ow-dur-sub{font-size:15px;color:var(--ink);font-weight:600;margin:10px 0 22px;}
+    .ow-dur-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+    .ow-dur-list li{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#f4faff;border-radius:12px;padding:13px 18px;text-align:left;}
+    .ow-dur-freq{font-weight:600;color:var(--ink);}
+    .ow-dur-time{font-weight:800;color:var(--blue);white-space:nowrap;}
+    .ow-dur-note{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:960px;margin:0 auto;}
+    .ow-dur-note>div{background:#fff;border:1px solid #e6eef7;border-radius:14px;padding:18px 20px;font-weight:600;color:var(--ink);font-size:14.5px;line-height:1.5;}
+    .ow-dur-note-ic{display:inline-flex;width:22px;height:22px;background:var(--blue);color:#fff;border-radius:50%;align-items:center;justify-content:center;font-size:12px;margin-right:8px;vertical-align:middle;}
+    @media(max-width:780px){.ow-dur-grid{grid-template-columns:1fr;}.ow-dur-note{grid-template-columns:1fr;}.ow-dur-list li{flex-direction:column;align-items:flex-start;gap:3px;}}
   </style>
 </head>
 <body>
@@ -512,48 +526,43 @@
     </div>
   </section>
 
-  <!-- ============ 8. SAVE MONEY / COST BREAKDOWN ============ -->
+  <!-- ============ 8. WIE LANGE DEIN VORRAT REICHT (DAUER-WERT) ============ -->
   <section class="soft">
     <div class="ow-wrap">
       <div class="ow-sec-head">
-        <h2>So viel sparst du weiterhin, Wäsche für Wäsche</h2>
-        <p>Deine Ersparnis hört nicht auf. Solange du bei den Waschmittelblättern bleibst, bleibt auch dein Budget geschont. Hier die echten Zahlen.</p>
+        <h2>Einmal bestellen, monatelang versorgt</h2>
+        <p>Dein Nachschub-Bundle hält länger, als du denkst. Ein Vorrat, der dich viele Monate begleitet, ganz ohne ständiges Nachkaufen und ohne schwere Flaschen.</p>
       </div>
 
-      <div class="ow-cost-grid">
-        <div class="ow-cost-card win">
-          <span class="ow-cost-badge">Beste Wahl</span>
-          <div class="ow-cost-ind">✓ Günstiger</div>
-          <div class="ow-cost-label">OceanWash</div>
-          <div class="ow-cost-num">ca. 0,12 €</div>
-          <div class="ow-cost-unit">pro Wäsche</div>
-          <p class="ow-cost-note">3 Packs = 192 Wäschen für ca. 35,96 € mit Code.</p>
-        </div>
-        <div class="ow-cost-card lose">
-          <div class="ow-cost-ind">✕ Teurer</div>
-          <div class="ow-cost-label">Herkömmliches Waschmittel</div>
-          <div class="ow-cost-num">ca. 0,30 €</div>
-          <div class="ow-cost-unit">pro Wäsche (Schätzung)</div>
-          <p class="ow-cost-note">Durch Überdosierung oft noch teurer. (Schätzung / ungefährer Richtwert)</p>
-        </div>
-      </div>
-
-      <div class="ow-cost-bottom">
-        <div class="ow-cost-box">
-          <h3>Deine Bundle-Ersparnis</h3>
-          <ul class="ow-econ">
-            <li><span>3 Packs OceanWash Waschmittelblätter</span></li>
-            <li><span>1x Spülmaschinenpods dazu</span></li>
-            <li><span>Dein 10% Nachbestell-Rabatt</span></li>
-            <li class="total"><span>Du sparst</span><span>ca. 23,00 €</span></li>
+      <div class="ow-dur-grid">
+        <div class="ow-dur-card">
+          <div class="ow-dur-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 8h16"/><circle cx="12" cy="14.5" r="3.2"/></svg>
+          </div>
+          <div class="ow-dur-qty">192 Wäschen</div>
+          <div class="ow-dur-sub">3 Packs OceanWash Waschmittelblätter</div>
+          <ul class="ow-dur-list">
+            <li><span class="ow-dur-freq">3 Wäschen pro Woche</span><span class="ow-dur-time">ca. 15 Monate</span></li>
+            <li><span class="ow-dur-freq">5 Wäschen pro Woche</span><span class="ow-dur-time">ca. 9 Monate</span></li>
           </ul>
         </div>
-        <div class="ow-cost-box">
-          <h3>Warum es sich wirklich lohnt</h3>
-          <p class="hint">192 Wäschen im Bundle, ein Waschmittelblatt pro Ladung, ganz ohne Raten.</p>
-          <p class="hint" style="margin-top:14px;">Keine Überdosierung heißt: kein verschwendetes Produkt und kein verschwendetes Geld.</p>
-          <p class="hint" style="margin-top:14px;">Die gratis Spülmaschinenpods bekommst du obendrauf, ganz ohne Aufpreis.</p>
+        <div class="ow-dur-card">
+          <div class="ow-dur-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M5 7h14"/><path d="M9 12h6M9 15.5h6"/></svg>
+          </div>
+          <div class="ow-dur-qty">64 Spülgänge</div>
+          <div class="ow-dur-sub">1 Pack Spülmaschinenpods dazu</div>
+          <ul class="ow-dur-list">
+            <li><span class="ow-dur-freq">3 Spülgänge pro Woche</span><span class="ow-dur-time">ca. 5 Monate</span></li>
+            <li><span class="ow-dur-freq">5 Spülgänge pro Woche</span><span class="ow-dur-time">ca. 3 Monate</span></li>
+          </ul>
         </div>
+      </div>
+
+      <div class="ow-dur-note">
+        <div><span class="ow-dur-note-ic">✓</span> Ein Vorrat für viele Monate, kein ständiges Nachbestellen.</div>
+        <div><span class="ow-dur-note-ic">✓</span> Kompakt und leicht verstaut, kein Schleppen schwerer Flaschen.</div>
+        <div><span class="ow-dur-note-ic">✓</span> Immer griffbereit, damit dir nie das Waschmittel ausgeht.</div>
       </div>
     </div>
   </section>
@@ -567,7 +576,7 @@
       </div>
       <div class="ow-ps-grid">
         <div class="ow-ps-card ow-ps-problem">
-          <img src="Images/OW-PROBLEM-DETERGENT.jpg" alt="Herkömmliches Waschmittel in schweren Plastikflaschen">
+          <img src="https://placehold.co/120x120/dfeaf5/0C0C41?text=x" alt="Herkömmliches Waschmittel in schweren Plastikflaschen">
           <div class="body">
             <span class="tag">Das alte Waschmittel</span>
             <h3>Dahin willst du nicht zurück</h3>
@@ -601,7 +610,7 @@
     <div class="ow-wrap">
       <div class="ow-family-grid">
         <div class="ow-family-media">
-          <img src="Images/OW-FAMILY.jpg" alt="Familie mit sauberer, hautfreundlicher Wäsche">
+          <img src="https://placehold.co/120x120/dfeaf5/0C0C41?text=x" alt="Familie mit sauberer, hautfreundlicher Wäsche">
         </div>
         <div class="ow-family-copy">
           <h2>Besser für deine Familie</h2>
@@ -636,7 +645,7 @@
               </th>
               <th>
                 <span class="cmp-head">
-                  <img class="cmp-thumb" src="Images/OW-PROBLEM-DETERGENT.jpg" alt="Herkömmliches Waschmittel">
+                  <img class="cmp-thumb" src="https://placehold.co/120x120/dfeaf5/0C0C41?text=x" alt="Herkömmliches Waschmittel">
                   Zurück zum herkömmlichen Waschmittel
                 </span>
               </th>
@@ -675,7 +684,7 @@
           <div class="rstars">★★★★★</div>
           <p class="rtext">„Seit wir umgestellt haben, kratzt nichts mehr auf der Haut meiner Kinder. Ich bestelle immer wieder nach, jetzt mit Rabatt sogar noch lieber."</p>
           <div class="ow-review-who">
-            <img src="Images/OW-REVIEW-1.jpg" alt="Sandra K.">
+            <img src="https://placehold.co/120x120/dfeaf5/0C0C41?text=x" alt="Sandra K.">
             <div><div class="nm">Sandra K.</div><div class="vf">✓ Verifizierter Kauf</div></div>
           </div>
         </div>
@@ -683,7 +692,7 @@
           <div class="rstars">★★★★★</div>
           <p class="rtext">„Endlich keine schweren Flaschen mehr schleppen. Ein Waschmittelblatt rein, fertig. So einfach sollte Wäsche immer sein."</p>
           <div class="ow-review-who">
-            <img src="Images/OW-REVIEW-2.jpg" alt="Miriam T.">
+            <img src="https://placehold.co/120x120/dfeaf5/0C0C41?text=x" alt="Miriam T.">
             <div><div class="nm">Miriam T.</div><div class="vf">✓ Verifizierter Kauf</div></div>
           </div>
         </div>
@@ -691,7 +700,7 @@
           <div class="rstars">★★★★★</div>
           <p class="rtext">„Saubere Wäsche, angenehm dezenter Duft und weniger Plastik im Haushalt. Für unsere Familie genau richtig."</p>
           <div class="ow-review-who">
-            <img src="Images/OW-REVIEW-3.jpg" alt="Petra &amp; Familie">
+            <img src="https://placehold.co/120x120/dfeaf5/0C0C41?text=x" alt="Petra &amp; Familie">
             <div><div class="nm">Petra &amp; Familie</div><div class="vf">✓ Verifizierter Kauf</div></div>
           </div>
         </div>
