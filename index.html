@@ -387,6 +387,8 @@
     .ow-dur-card{background:#fff;border:1px solid #e6eef7;border-radius:18px;padding:34px 28px;text-align:center;box-shadow:0 10px 34px rgba(12,12,65,.06);}
     .ow-dur-icon{width:58px;height:58px;margin:0 auto 16px;color:var(--blue);}
     .ow-dur-icon svg{width:100%;height:100%;}
+    .ow-dur-img{width:100%;height:170px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;}
+    .ow-dur-img img{max-width:100%;max-height:100%;object-fit:contain;border-radius:12px;}
     .ow-dur-qty{font-size:36px;font-weight:900;color:var(--blue);line-height:1;}
     .ow-dur-sub{font-size:15px;color:var(--ink);font-weight:600;margin:10px 0 22px;}
     .ow-dur-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
@@ -530,14 +532,14 @@
   <section class="soft">
     <div class="ow-wrap">
       <div class="ow-sec-head">
-        <h2>Einmal bestellen, monatelang versorgt</h2>
+        <h2>Ein Nachschub Bundle, über 1 Jahr versorgt!</h2>
         <p>Dein Nachschub-Bundle hält länger, als du denkst. Ein Vorrat, der dich viele Monate begleitet, ganz ohne ständiges Nachkaufen und ohne schwere Flaschen.</p>
       </div>
 
       <div class="ow-dur-grid">
         <div class="ow-dur-card">
-          <div class="ow-dur-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 8h16"/><circle cx="12" cy="14.5" r="3.2"/></svg>
+          <div class="ow-dur-img">
+            <img src="https://cdn.shopify.com/s/files/1/0580/5211/6503/files/Copyof1_WB_Baumwolle_1_64ea66ae-a3ab-4719-a4d0-ee1a0f9a3cf0.png" alt="OceanWash Waschmittelblätter Pack">
           </div>
           <div class="ow-dur-qty">192 Wäschen</div>
           <div class="ow-dur-sub">3 Packs OceanWash Waschmittelblätter</div>
@@ -547,8 +549,8 @@
           </ul>
         </div>
         <div class="ow-dur-card">
-          <div class="ow-dur-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M5 7h14"/><path d="M9 12h6M9 15.5h6"/></svg>
+          <div class="ow-dur-img">
+            <img src="https://cdn.shopify.com/s/files/1/0580/5211/6503/files/Copy_of_1_WB_spuelmaschinenpods_1_273a80a2-b515-432d-9c16-14f6e75d7f31.png" alt="OceanWash Spülmaschinenpods Pack">
           </div>
           <div class="ow-dur-qty">64 Spülgänge</div>
           <div class="ow-dur-sub">1 Pack Spülmaschinenpods dazu</div>
@@ -575,19 +577,6 @@
         <p>Du hast den Unterschied längst gespürt. Hier nochmal zur Erinnerung, was du hinter dir gelassen hast und warum sich Dranbleiben lohnt.</p>
       </div>
       <div class="ow-ps-grid">
-        <div class="ow-ps-card ow-ps-problem">
-          <img src="Images/OW-PROBLEM-DETERGENT.jpg" alt="Herkömmliches Waschmittel in schweren Plastikflaschen">
-          <div class="body">
-            <span class="tag">Das alte Waschmittel</span>
-            <h3>Dahin willst du nicht zurück</h3>
-            <ul class="ow-ps-list">
-              <li><span class="ic">✕</span> Zurück zu vielen unnötigen Zusatzstoffen &amp; Duftchemie</li>
-              <li><span class="ic">✕</span> Wieder Reste in der Wäsche, direkt auf der Haut</li>
-              <li><span class="ic">✕</span> Wieder schwere Plastikflaschen, leicht überdosiert</li>
-              <li><span class="ic">✕</span> Wieder viel Verpackungsmüll bei jeder Nachbestellung</li>
-            </ul>
-          </div>
-        </div>
         <div class="ow-ps-card ow-ps-solution">
           <img src="https://cdn.shopify.com/s/files/1/0580/5211/6503/files/Copyof1_WB_Baumwolle_1_64ea66ae-a3ab-4719-a4d0-ee1a0f9a3cf0.png" alt="OceanWash Waschmittelblätter Pack, 64 Wäschen">
           <div class="body">
@@ -598,6 +587,19 @@
               <li><span class="ic">✓</span> Weiterhin saubere Wäsche ohne aggressive Chemie</li>
               <li><span class="ic">✓</span> Weiterhin exakt dosiert, ein Waschmittelblatt pro Wäsche</li>
               <li><span class="ic">✓</span> Weiterhin kompakt, platzsparend, deutlich weniger Plastik</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ow-ps-card ow-ps-problem">
+          <img src="Images/OW-PROBLEM-DETERGENT.jpg" alt="Herkömmliches Waschmittel in schweren Plastikflaschen">
+          <div class="body">
+            <span class="tag">Das alte Waschmittel</span>
+            <h3>Dahin willst du nicht zurück</h3>
+            <ul class="ow-ps-list">
+              <li><span class="ic">✕</span> Zurück zu vielen unnötigen Zusatzstoffen &amp; Duftchemie</li>
+              <li><span class="ic">✕</span> Wieder Reste in der Wäsche, direkt auf der Haut</li>
+              <li><span class="ic">✕</span> Wieder schwere Plastikflaschen, leicht überdosiert</li>
+              <li><span class="ic">✕</span> Wieder viel Verpackungsmüll bei jeder Nachbestellung</li>
             </ul>
           </div>
         </div>
@@ -753,7 +755,7 @@
   <!-- ============ 11. OFFER REMINDER BAND ============ -->
   <section class="ow-reminder">
     <div class="ow-wrap">
-      <h2>Als Dankeschön fürs Dranbleiben: 10% Rabatt + GRATIS Spülmaschinenpods</h2>
+      <h2>Als Dankeschön fürs Dranbleiben schenken wir dir 10% Rabatt!</h2>
       <p>Du bleibst uns treu, wir bedanken uns mit deinem Nachbestell-Vorteil. Sichere dir dein Bundle, solange das Angebot läuft.</p>
       <a class="ow-btn" href="https://oceanwash.de/collections/frontpage/products/nachschub-bundle">Angebot jetzt sichern →</a>
     </div>
@@ -807,11 +809,10 @@
   <section class="ow-final soft">
     <div class="ow-wrap">
       <h2>Du hast die richtige Wahl getroffen. Mach einfach weiter.</h2>
-      <p class="ow-final-sub">Saubere Wäsche, hautfreundlich für die ganze Familie, einfach nachbestellt, jetzt mit 10% Rabatt und gratis Spülmaschinenpods.</p>
+      <p class="ow-final-sub">Saubere Wäsche, hautfreundlich für die ganze Familie, einfach nachbestellt, jetzt mit 10% Rabatt.</p>
       <ul class="ow-stack">
         <li>3 Packs Waschmittelblätter</li>
         <li>10% Rabatt mit Code</li>
-        <li>GRATIS Spülmaschinenpods</li>
         <li>Hautfreundlich für die ganze Familie</li>
         <li>Zufriedenheitsgarantie</li>
       </ul>
